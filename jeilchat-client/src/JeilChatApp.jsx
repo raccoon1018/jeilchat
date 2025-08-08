@@ -5,7 +5,7 @@ import Login from "./Login";
 import Input from "./components/ui/Input";
 import Button from "./components/ui/Button";
 
-const socket = io("http://localhost:3000"); // 배포 시 주소 변경 필요
+const socket = io("https://jeilchat.onrender.com"); // 배포 시 주소 변경 필요
 
 export default function JeilChatApp() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -145,11 +145,11 @@ export default function JeilChatApp() {
         </div>
 
         <div className="mt-2 text-xs text-gray-500 text-center">
-          익명 채팅이지만 님들 IP는 상시 추적되니 주의 ㅎㅎ
+          익명 채팅이지만 님들 IP는 상시 추적되니 주의하세요.
         </div>
 
         <div className="text-xs text-gray-400 text-center mt-1">
-          ver1.0 Build 250809
+          ver1.0.1 Build 250809 ㅅㅂ
         </div>
       </footer>
     </div>
